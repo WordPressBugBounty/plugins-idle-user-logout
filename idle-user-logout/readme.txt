@@ -1,10 +1,10 @@
 === Idle User Logout ===
 Contributors: abiralneupane
-Tags: auto, logout, signout, interval, duration, automatic, auto logout, idle time, idle user
+Tags: automatic, auto sign out, auto logout, idle time, idle user
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8XTNYEPT5YBNN
 Requires at least: 3.0
-Tested up to: 6.5
-Stable tag: 3.1
+Tested up to: 7.1
+Stable tag: 3.2
 
 This plugin automatically logs out the user after a period of idle time. The time period can be configured from admin end.
 
@@ -24,7 +24,7 @@ Once you reach Idle User Logout Page, you can setup behavior of the plugin for e
 If there is any problem, or need any help, we can give you a helping hand.
 
 == Installation ==
-Install this plugin is very simple:
+Installation is very simple:
 
 1.	Upload the plugin\'s folder to the `/wp-content/plugins/` directory
 
@@ -44,13 +44,20 @@ It isn\'t possible. The plugin does some validation, which force user to set idl
 
 
 == Screenshots ==
-1. 1 **Admin Section** Admin section to describe the behavior of each roles of users
-2. 2 **Popup** Pop up shown right after idle timer is reached.
+1. **Admin Section** Admin section to describe the behavior of each roles of users
+2. **Popup** Pop up shown right after idle timer is reached.
 
 == Upgrade Notice ==
-Please take a backup of your project ( specially database) before upgrading this plugin )
+Please take a backup of your project (specially database) before upgrading this plugin.
 
 == Changelog ==
+= 3.2 =
+* Fix: Coding standards improvements — singleton pattern, nonce verification, input sanitization, and output escaping
+* Ensured WordPress coding standards compliance
+* Feature: Added 10-second countdown toast with "Stay logged in" option before logout
+* Feature: Separated frontend and admin modal templates for theme override
+* Fix: Coding standards improvements — singleton pattern, nonce verification, input sanitization, and output escaping
+
 = 3.1 =
 * No changes are made. Just updated the version
 
